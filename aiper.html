@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Blueprint: Zoom Slider</title>
+	<meta name="description" content="A simple content slider with depth-like zoom functionality" />
+	<meta name="keywords" content="blueprint, template, slider, zoom, javascript, depth, 3d, css" />
+	<meta name="author" content="Codrops" />
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- Feather Icons -->
+	<link rel="stylesheet" type="text/css" href="./assets/fonts/feather/style.css">
+	<!-- General demo styles & header -->
+	<link rel="stylesheet" type="text/css" href="./assets/css/demo.css" />
+	<!-- Component styles -->
+	<link rel="shortcut icon" href="/assets/img/favicon_edited.png" type="image/png">
+	<link rel="stylesheet" type="text/css" href="./assets/css/component.css" />
+	<script src="./assets/js/modernizr.custom.js"></script>
+</head>
+<body>
+	<!-- Main container -->
+	<div class="container">
+		<!-- Blueprint header -->
+		<header class="bp-header cf">
+			<span>aiper</span>
+			<h1>Slider de Proyecto</h1>
+			<nav>
+				<a href="./index.html" class="bp-icon bp-icon-prev" data-info="volver"><span>Volver</span></a>
+		
+			</nav>
+		</header>
+		<!-- Grid -->
+		<section class="slider">
+			<div class="slide slide--current" data-content="content-1">
+				<div class="slide__mover">
+					<div class="zoomer flex-center">
+						<img class="zoomer__image" src="assets/images/aiper1.png" alt="iClothes" />
+						<div class="preview">
+							<img src="assets/images/aiper1.png" alt="iPhone app preview" />
+							<div class="zoomer__area zoomer__area--size-2"></div>
+						</div>
+					</div>
+				</div>
+				<h2 class="slide__title"><span>Manual de</span>Marca</h2>
+			</div>
+			<div class="slide" data-content="content-2">
+				<div class="slide__mover">
+					<div class="zoomer flex-center">
+						<img class="zoomer__image" src="assets/images/aiper2.png" alt="iClothes App Demo" />
+						<div class="preview">
+							<img src="assets/images/aiper2.png" alt="iClothes App" />
+							<div class="zoomer__area zoomer__area--size-4"></div>
+						</div>
+					</div>
+				</div>
+				<h2 class="slide__title"><span>Desarrollo de</span> Branding</h2>
+			</div>
+			<div class="slide" data-content="content-3">
+				<div class="slide__mover">
+					<div class="zoomer flex-center">
+						<img class="zoomer__image" src="assets/images/aiper5.png" alt="iClothes video preview" />
+						<div class="preview">
+							<img src="assets/images/aiper5.png" alt="iClothes Video" />
+							<div class="zoomer__area zoomer__area--size-4"></div>
+						</div>
+					</div>
+				</div>
+				<h2 class="slide__title"><span>Creación de</span> Presentación animada</h2>
+			</div>
+			<div class="slide" data-content="content-4">
+				<div class="slide__mover">
+					<div class="zoomer flex-center">
+						<img class="zoomer__image" src="assets/images/aiper6.png" alt="iClothes video preview" />
+						<div class="preview">
+							<img src="assets/images/aiper6.png" alt="iClothes Video" />
+							<div class="zoomer__area zoomer__area--size-4"></div>
+						</div>
+					</div>
+				</div>
+				<h2 class="slide__title"><span>Creación de</span> Ads graficos</h2>
+			</div>
+			<nav class="slider__nav">
+				<button class="button button--nav-prev"><i class="icon icon--arrow-left"></i><span class="text-hidden">Anterior</span></button>
+				<button class="button button--zoom"><i class="icon icon--zoom"></i><span class="text-hidden">Detalles</span></button>
+				<button class="button button--nav-next"><i class="icon icon--arrow-right"></i><span class="text-hidden">Siguiente</span></button>
+			</nav>
+		</section>
+		<!-- /slider-->
+		<section class="content">
+			<div class="content__item" id="content-1">
+				<img class="content__item-img rounded-right" src="assets/images/aiper1.png" alt="Sitio Web Stratego" />
+				<div class="content__item-inner">
+					<h2>Manual de marca</h2>
+					<h3>Identidad visual al completo de la marca.</h3>
+					<p><a href="./assets/pdf/Manual de marca - aiper.pdf">Ver manual de marca &xrarr;</a></p>
+				</div>
+			</div>
+			<div class="content__item" id="content-2">
+				<img class="content__item-img rounded-right" src="assets/images/aiper2.png" alt="Branding aiper" />
+				<div class="content__item-inner">
+					<h2>Desarrollo de Branding</h2>
+					<h3>Agente Inmobiliario PERsonalizado</h3>
+				</div>
+			</div>
+			<div class="content__item" id="content-3">
+				<video class="content__item-img rounded-right" width="100%" height="auto" controls>
+					<source src="assets/images/aiper.mp4" type="video/mp4">
+					Tu navegador no soporta el formato de video.
+				  </video>				  
+				<div class="content__item-inner">
+					<h2>Presentación animada</h2>
+					<h3>Tecnologias usadas: After Effects, Photoshop, Illustrator, PowerPoint</h3>
+				</div>
+			</div>
+			<div class="content__item" id="content-4">
+				<img class="content__item-img rounded-right" src="assets/images/aiper3.png" alt="Branding aiper" />
+				<div class="content__item-inner">
+					<h2>Desarrollo de Branding</h2>
+					<h3>Agente Inmobiliario PERsonalizado</h3>
+				</div>
+			</div>
+			<button class="button button--close"><i class="icon icon--circle-cross"></i><span class="text-hidden">Cerrar</span></button>
+		</section>
+	</div>
+	<script src="assets/js/classie.js"></script>
+	<script src="assets/js/dynamics.min.js"></script>
+	<script src="assets/js/main2.js"></script>
+</body>
+</html>
